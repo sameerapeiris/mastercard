@@ -23,7 +23,7 @@ function show(data) {
     let content = ``;
   let bgImg = ``;
   // Loop to access all rows
-  // Loop to access all rows
+
   for (let i = 0; i < data.data.length; i++) {
 
      content = `<div class="card-wrap">
@@ -39,49 +39,5 @@ function show(data) {
     document.getElementById(`cardContent${i + 1}`).style.backgroundImage = `url(${bgImg})`;
 
 
-    // document.querySelectorAll(".card-content").forEach(element => {
-    //                 element.innerHTML = content;
-    //                 element.style.backgroundImage = `url(${bgImg})`;
-    //             })
-    // Setting innerHTML and background image for each element with the 'card-content' class
-    // const cardContentElement = document.getElementById(`cardContent${i + 1}`);
-    // cardContentElement.innerHTML = content;
-    // cardContentElement.style.backgroundImage = `url(${bgImg})`;
 }
-//   for (let r of data.data) {
-//     content += ` <div class"card-wrap"><small>${r.title}</small>
-//         <h1 class="header-one">${r.short_description}</h1>
-//         <div>
-//             <p class="publisher d-flex">${r.developer} | <span class="date">${r.release_date}</span> </p> 
-//         </div>	</div>`;
-//     bgImg = `${r.thumbnail}`;
-//         // Setting innerHTML as tab variable
-//         document.querySelectorAll(".card-content").forEach(element => {
-//             element.innerHTML = content;
-//             element.style.backgroundImage = `url(${bgImg})`;
-//         })
-  
-
- 
-//   }
-  
 }
-// let headerOne = document.querySelector(".header-one");
-// let tumb = document.querySelector(".master-test_left");
-
-// function getText() {
-//     fetch("https://fiz6ri4wc7qe2wdmocksaz75lm0nfars.lambda-url.us-east-1.on.aws/api/v1/articles")
-//       .then(function(res) {
-//         return res.json();
-//       })
-//       .then(function(data) {
-//         headerOne.textContent = data.data[0].title;
-//         tumb.style.backgroundImage = `url(${data.data[0].thumbnail})`;
-
-//       })
-//       .catch(function(err) {
-//         console.log(err);
-//       });
-//   }
-
-//   getText();
